@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const { User } = require("./User");
 const { Item } = require("./Item");
 
+require("dotenv").config();
+
 const DB_URL = process.env.MONGO;
 
 mongoose.connect(

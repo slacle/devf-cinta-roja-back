@@ -9,6 +9,6 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/v1", router);
 
-app.listen(PORT, err => {
+app.listen(PORT, (err) => {
   !err ? console.log(`App running on ${PORT}`) : console.log(err);
 });
